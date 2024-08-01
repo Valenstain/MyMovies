@@ -1,0 +1,257 @@
+@charset "utf-8";
+*
+{	margin: 0;
+    padding: 0;
+}
+body
+{
+    font-family: Arial, sans-serif;
+    cursor: default;
+    font-size: 14px;
+    text-align: justify;
+    color: #505050;
+    background: #2c495b;
+}
+a, img
+{
+    border: none;
+}
+a
+{
+    cursor: pointer;
+    color: #087ad5;
+    text-decoration: none;
+}
+a:hover
+{
+    color: #932094;
+    cursor: pointer;
+}
+article, aside, figcaption, figure, footer, header, hgroup, nav, section, address
+{
+    display: block;
+}
+.clear
+{
+    clear: both;
+}
+li
+{
+    list-style-type: none;
+}
+table
+{
+    border: 0;
+    border-collapse: collapse;
+}
+#central
+{
+    margin: 0 auto;
+    width: 1100px;
+}
+#header
+{
+    width: 100%;
+    height: 50px;
+    background: url("../images/movie-background-collage.jpg") no-repeat;
+}
+#main
+{
+    padding: 30px;
+    width: 100%;
+    background: #f2f2f2;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-column-gap: 30px;
+    align-items: start;
+}
+#menu li
+{
+    padding: 0 10px;
+    display: block;
+    box-sizing: border-box;
+    line-height: 40px;
+}
+#menu li:not(:last-child)
+{
+    border-bottom: 1px solid #adadad;
+}
+#menu a
+{
+    color: #333;
+    transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+}
+#menu a:hover
+{
+    margin-left: 10px;
+}
+#main h1
+{
+    margin-bottom: 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 26px;
+}
+#main table
+{
+    width: 100%;
+}
+#main table th
+{
+    background: #e5e5e5;
+    line-height: 50px;
+    font-weight: normal;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+#main table th:not(:first-child)
+{
+    text-align: center;
+}
+#main table th:not(:last-child)
+{
+    border-right: 1px solid #f2f2f2;
+}
+#main table td
+{
+    line-height: 40px;
+    font-weight: normal;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+#main table a.link
+{
+    color: #5a8fb1;
+    transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+}
+#main table a.link:hover
+ {
+     margin-left: 10px;
+ }
+#main table td:nth-child(2),
+#main table td:nth-child(3),
+#main table td:nth-child(4)
+{
+    width: 120px;
+}
+#form div,
+#small-form div
+{
+    position: relative;
+}
+#form
+{
+    padding-bottom: 100px;
+    width: 500px;
+}
+#small-form
+{
+    padding-bottom: 100px;
+    width: 300px;
+}
+#form .title,
+#small-form .title
+{
+    line-height: 36px;
+}
+#form input,
+#small-form input
+{
+    max-width: 100%;
+    width: 300px;
+    line-height: 16px;
+    box-sizing: border-box;
+    padding: 6px 10px;
+    border: 1px solid #adadad;
+}
+#form textarea
+{
+    padding: 6px 10px;
+    line-height: 16px;
+    box-sizing: border-box;
+    max-width: 100%;
+    width: 500px;
+    height: 140px;
+    border: 1px solid #adadad;
+}
+#form select
+{
+    max-width: 100%;
+    width: 300px;
+    height: 30px;
+    border: 1px solid #adadad;
+}
+#form .div-button,
+#small-form .div-button
+{
+    padding-top: 10px;
+    text-align: right;
+}
+.button
+{
+    padding: 0 20px;
+    display: inline-block;
+    background: #e5e5e5;
+    line-height: 30px;
+    color: #333333;
+    text-transform: lowercase;
+    transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    border: 1px solid #adadad;
+    cursor: pointer;
+}
+.button:hover
+{
+    background-color: #8ecaef;
+    color: #333333;
+}
+#control_buttons
+{
+    margin-bottom: 50px;
+    padding-top: 30px;
+}
+#control_buttons ul
+{
+    display: flex;
+    justify-content: flex-end;
+}
+#control_buttons li:not(:first-child)
+{
+    padding-left: 10px;
+}
+.empty
+{
+    text-align: center;
+}
+.info
+{
+    padding: 12px 0;
+    text-align: right;
+    color: #999;
+}
+.error
+{
+    border-radius: 5px;
+    color: #d11d1d;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    display: inline-block;
+    background: #fff;
+    box-sizing: border-box;
+    padding: 8px 12px;
+    box-shadow: 3px 4px 6px 0px #c1c1c1;
+    z-index: 9;
+}
